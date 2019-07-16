@@ -1,0 +1,30 @@
+{{ define "title" -}}
+  {{ .Title }} | {{ .Site.Title }}
+{{- end }}
+{{ define "style"}}
+<link rel="stylesheet" href="/css/custom.css"> 
+{{ end }} 
+
+{{ define "header" }} {{ partial "menu" . }} {{ end }} 
+
+{{ define "main" }}
+
+<section class="is-flex flex-column backgroundcolor-grey height-90 justify-centered has-padding-1 margin-auto has-text-centered">
+<div class="columns is-fullheight">
+    <div class="column">
+        <section class="hero is-default is-bold">
+            <div class="hero-body">
+                <div class="content container">
+                   {{.Content}}
+                </div>
+                <br>
+            </div>
+        </section>
+    </div>
+</div>
+</section>
+
+{{ end }} 
+{{ define "footer" }} 
+  {{ partial "footer" . }} 
+{{ end }}

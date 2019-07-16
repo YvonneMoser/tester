@@ -1,0 +1,53 @@
+title = "About Syntherion"
+subtitle = "Lorem ipsum dolor sit amet"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+image = "/img/laptop2.png"
+
+
+[mission]
+title = "Our Mission"
+image = "http://www.thinkgig.com/wp-content/uploads/2017/08/Evan_Kirstel_Blog_Social_BLOG_900x310.jpg"
+subtitle = "Lorem ipsum dolor sit amet."
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+
+[team]
+title = "Team"
+description = "Lorem ipsum dolor sit amet"
+
+[[teamMembers]]
+  name = "Annika"
+  role = "Senior Consultant"
+  image = "/img/team1.png"
+  image2 = "/img/team1.png"
+
+[[teamMembers]]
+  name = "Lena"
+  image = "/img/team2.png"
+  role = "Senior Consultant"
+  image2 = "/img/team2.png"
+
+[[teamMembers]]
+  name = "Lara"
+  image = "/img/team3.png"
+  role = "Senior Consultant"
+  image2 = "/img/team2.png"
+
+
+[[teamMembers]]
+  name = "Annika 2"
+  image = "/img/team1.png"
+  role = "Senior Consultant"
+  image2 = "/img/team2.png"
+
+[[teamMembers]]
+  name = "Lena 2"
+  image = "/img/team2.png"
+  role = "Senior Consultant"
+  image2 = "/img/team2.png"
+
+[[teamMembers]]
+  name = "Lara 2"
+  image = "/img/team3.png"
+  role = "Senior Consultant"
+  image2 = "/img/team3.png"
+

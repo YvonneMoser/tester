@@ -1,0 +1,100 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "style"}}
+<link rel="stylesheet" href="/css/custom.css"> 
+{{ end }} 
+{{ define "header"}} {{ partial "menu" .}} {{end}} 
+
+{{ define "main" }}
+
+<section data-aos="fade-down" class="is-flex flex-column backgroundcolor-grey height-90 has-padding-1 margin-auto has-text-centered">
+  <div>
+    <h1 class="is-size-1 color-green">{{ .Site.Title }}</h1>
+    <h3 style="width:60vw" class="margin-auto is-size-4">{{ .Site.Params.description}}</h3>
+    <a data-aos="zoom-in" class="primary-button button" href="demo">Demo</a>
+  </div>
+  </div>
+  <div class="is-three-fifths margin-auto">
+    <figure data-aos="fade-up" class="margin-auto">
+      <img class="image-self lazyload" src={{ .Site.Data.landingpage.imageFirstSection}} alt="Description">
+  
+    </figure>
+  </div>
+</section>
+
+<section class="is-flex flex-column justify-centered height-90 has-padding-1 margin-auto has-text-centered">
+  <h1 class="is-size-1 color-green">{{ .Site.Data.landingpage.headerFacts}}</h1>
+  <div class="columns">
+    {{range .Site.Data.landingpage.facts}}
+    <div class="column">
+        <img data-aos="zoom-in" style="width:15vw;" src={{.icon}} alt="icon">
+      <!-- <h3>{{ .title}}</h3> -->
+      <p>{{ .description }}</p>
+    </div>
+    {{end}}
+  </div>
+</section>
+
+{{range first 1 .Site.Data.landingpage.sectionleft}}
+<section class="overview backgroundcolor-grey height-90 has-padding-1 margin-auto has-text-centered is-flex justify-centered column"> 
+    <div class="columns">
+      <figure class="column is-three-fifths margin-auto">
+          <img data-aos="fade-right" style="width:60vw" class="lazyload" src="{{ .image}}" alt="Description">
+      </figure>
+      <div class="column margin-auto">
+        <h1 class="is-size-1 color-green">{{ .title }}</h1>
+        <p>{{ .description}}</p>
+      </div>
+    </div>
+  </section>
+{{end}}
+
+{{range first 1 .Site.Data.landingpage.sectionright}}
+<section class="overview height-90 has-padding-1 margin-auto has-text-centered is-flex justify-centered column"> 
+    <div class="columns">
+      <div class="column margin-auto">
+        <h1 class="is-size-1 color-green">{{ .title }}</h1>
+        <p>{{ .description}}</p>
+      </div>
+      <figure class="column is-three-fifths margin-auto">
+        <img data-aos="fade-left" style="width:60vw" class="lazyload" src="{{ .image}}" alt="Description">
+      </figure>
+    </div>
+  </section>
+{{end}}
+
+{{range last 1 .Site.Data.landingpage.sectionleft}}
+<section class="overview backgroundcolor-grey height-90 has-padding-1 margin-auto has-text-centered is-flex justify-centered column"> 
+    <div class="columns">
+      <figure class="column is-three-fifths margin-auto">
+        <img data-aos="fade-right" style="width:60vw" class="lazyload" src="{{ .image}}" alt="Description">
+      </figure>
+      <div class="column margin-auto">
+        <h1 class="is-size-1 color-green">{{ .title }}</h1>
+        <p>{{ .description}}</p>
+      </div>
+    </div>
+  </section>
+{{end}}
+
+{{range last 1 .Site.Data.landingpage.sectionright}}
+<section class="overview height-90 has-padding-1 margin-auto has-text-centered is-flex justify-centered column"> 
+    <div class="columns">
+      <div class="column margin-auto">
+        <h1 class="is-size-1 color-green">{{ .title }}</h1>
+        <p>{{ .description}}</p>
+      </div>
+      <figure class="column is-three-fifths margin-auto">
+        <img data-aos="fade-left" style="width:60vw" class="lazyload" src="{{ .image}}" alt="Description">
+      </figure>
+    </div>
+  </section>
+{{end}}
+
+         
+
+{{ end }} 
+
+
+
+{{ define "footer" }} {{ partial "footer" .}} {{ end }}
+

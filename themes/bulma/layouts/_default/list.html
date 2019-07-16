@@ -1,0 +1,38 @@
+{{ define "header" }} {{ partial "menu" . }} {{ end }} 
+{{ define "style"}}
+<link rel="stylesheet" href="/css/custom.css"> 
+{{ end }} 
+{{ define "main" }}
+
+
+<div class="has-text-centered">
+
+<div class="backgroundcolor-grey is-fullheight">
+    {{if eq .URL "/blog/"}}
+    <h1 data-aos="fade-down" class="is-size-1 color-green">Blog</h1>
+    {{end}}
+
+    {{if eq .URL "/publication/"}}
+    <h1 data-aos="fade-down" class="is-size-1 color-green">Publications</h1>
+    {{end}}
+    <div class="columns ">
+    <div class="column">
+        <section class="hero is-default is-bold">
+            <div class="hero-body">
+                <div >
+                    {{ range .Paginator.Pages }} {{ partial "page-summary" . }} {{ end }}
+                </div>
+                <br>
+                <div class="container">
+                    {{ partial "pagination" . }} 
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</div>
+</div>
+{{ end }} 
+{{ define "footer" }} 
+  {{ partial "footer" . }} 
+{{ end }}

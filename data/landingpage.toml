@@ -1,0 +1,40 @@
+js = "<script src='https://unpkg.com/aos@next/dist/aos.js'></script>"
+headerFacts = "Facts"
+imageFirstSection = "/img/laptop.png"
+
+
+[[facts]]
+icon = "https://image.flaticon.com/icons/svg/809/809509.svg"
+title = "Fact 1"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+
+[[facts]]
+icon = "https://image.flaticon.com/icons/svg/865/865139.svg"
+title = "Fact 2"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+
+[[facts]]
+icon = "https://www.flaticon.com/premium-icon/icons/svg/861/861824.svg"
+title = "Fact 3"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+
+[[sectionleft]]
+title = "Überblick 1"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+image = "https://images.unsplash.com/photo-1487611459768-bd414656ea10?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+
+[[sectionright]]
+title = "Überblick 2"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+image = "https://images.unsplash.com/photo-1487611459768-bd414656ea10?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+
+[[sectionleft]]
+title = "Überblick 3"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+image = "https://images.unsplash.com/photo-1487611459768-bd414656ea10?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+
+[[sectionright]]
+title = "Überblick 4"
+description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+image = "https://images.unsplash.com/photo-1487611459768-bd414656ea10?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+
