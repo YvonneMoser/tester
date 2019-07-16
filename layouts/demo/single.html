@@ -1,0 +1,28 @@
+{{ define "title" -}}
+  {{ .Title }} | {{ .Site.Title }}
+{{- end }}
+{{ define "style"}}
+
+<link rel="stylesheet" href="/css/custom.css"> 
+{{ end }} 
+
+{{ define "header" }} {{ partial "menu" . }} {{ end }} 
+
+{{ define "main" }}
+
+<section class="is-flex flex-column backgroundcolor-grey height-90 justify-centered has-padding-1 margin-auto has-text-centered">
+  
+
+       <h1 data-aos="fade-down" class="is-size-1 color-green">Demo</h1>
+       <div class="demo-container">
+        <iframe data-aos="fade-left" class="demo-video" src={{.Site.Data.demo.video}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+ 
+</section>
+
+
+
+{{ end }} 
+{{ define "footer" }} 
+  {{ partial "footer" . }} 
+{{ end }}

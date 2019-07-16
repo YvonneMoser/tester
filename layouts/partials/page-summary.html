@@ -1,0 +1,35 @@
+<div class="column is-full-desktop" itemscope itemtype="http://schema.org/CreativeWork">
+    <div data-aos="fade-in" class="container-shadow column" style="border:1px solid transparent">
+    <div class="list-summary">
+        {{if .Params.img}}
+        <div class="list-image">
+            <img style="object-fit: cover;" src={{ .Params.img}} alt="">
+        </div>
+        {{end}}
+        <div class="summary-blogs">
+
+        {{ if eq .Type "post" }}
+        <h7 style="color:grey">
+        {{ partial "post/meta" . }}
+        </h7>
+        {{ end }}
+    
+    
+    <h1 class="title">
+        <a class="color-green" href="{{ .Permalink }}" itemprop="headline">{{ .Title }}</a>
+    </h1>
+    {{ if .Description }}
+    <blockquote itemprop="about">{{ .Description }}</blockquote>
+    {{ end }}
+    <h2 class="content" itemprop="description">
+        {{ .Summary }}
+    </h2>
+
+<div data-aos="zoom-in" class="button secondary-button">
+    <a style="color:black" href="{{ .RelPermalink }}" itemprop="url">Read More…</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>

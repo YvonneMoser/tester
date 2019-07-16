@@ -1,0 +1,52 @@
+{{ define "title" -}}
+  {{ .Title }} | {{ .Site.Title }}
+{{- end }}
+{{ define "style"}}
+<link rel="stylesheet" href="/css/custom.css"> 
+{{ end }} 
+
+{{ define "header" }} {{ partial "menu" . }} {{ end }} 
+
+{{ define "main" }}
+
+<section data-aos="fade-down" class="is-flex flex-column backgroundcolor-grey height-90 has-padding-1 margin-auto has-text-centered">
+  <h1 class="is-size-1 color-green">{{.Site.Data.about.title}}</h1>
+  <h3 class="is-size-4">{{.Site.Data.about.subtitle}}</h3>
+  <div style="max-height:50vh;">
+    <img data-aos="fade-left" style="max-height:50vh;" src={{.Site.Data.about.image}} alt="laptop"/>
+  </div>  
+  <p>{{.Site.Data.about.description}}</p>
+  </div>  
+  
+</section>
+
+<section data-aos="fade-down" class="is-flex justify-centered flex-column height-90 has-padding-1 margin-auto has-text-centered">
+  <h1 class="is-size-1 color-green">{{.Site.Data.about.mission.title}}</h1>
+  <h3 class="is-size-4">{{.Site.Data.about.mission.subtitle}}</h3>
+  <div style="max-height:50vh;">
+      <img data-aos="fade-right" style="max-height:50vh;" src={{.Site.Data.about.mission.image}} alt="laptop"/>
+    </div>  
+  <p>{{.Site.Data.about.mission.description}}</p>
+</section>
+
+<section data-aos="fade-down" class="is-flex justify-centered flex-column backgroundcolor-grey height-90 has-padding-1 margin-auto has-text-centered">
+    <h1 class="is-size-1 color-green">{{.Site.Data.about.team.title}}</h1>
+    <p>
+        {{.Site.Data.about.team.description}}
+    </p>
+    <div class="columns is-multiline margin-auto-0 justify-centered">
+      {{range .Site.Data.about.teamMembers}}
+      <div class="container-flip column is-one-third">
+
+      <div data-aos="flip-left" class="side team-image" style="display: flex;justify-content: center;align-items: flex-end; background-image: url({{.image}}); background-size:cover"><p style="padding: 15px !important; background: rgba(255, 255, 255, 0.596); width: fit-content;border-radius: 5px; color:black">{{.name}}</p></div>
+      <div class="side2 back team-image" style="display: flex;justify-content: center;align-items: flex-end; background-image: url({{.image2}}); background-size:cover"><p style="padding: 15px !important; background: rgba(255, 255, 255, 0.596); width: fit-content;border-radius: 5px; color:black">{{.role}}</p></div>
+
+      </div>  
+      {{end}}
+    </div>
+  </section>
+
+{{ end }} 
+{{ define "footer" }} 
+  {{ partial "footer" . }} 
+{{ end }}
